@@ -1,3 +1,13 @@
 name: A workflow for my Hello World file
 on : push
+Jobs:
+	Build:
+		Name : Hello world action
+		Runs-on : ubuntu-latest
+		Steps:
+      -	Uses: actions/checkout@v1
+      -	Uses: ./action-a
+        With:
+	        MY_NAME: “Vasanthi Rajkumar”
+
 
