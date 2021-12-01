@@ -3,11 +3,11 @@ on : push
 Jobs:
   build:
     Name : Hello world action
-		Runs-on : ubuntu-latest
-		Steps:
-      -	Uses: actions/checkout@v1
-      -	Uses: ./action-a
-        With:
-	        MY_NAME: “Vasanthi Rajkumar”
+    Runs-on : ubuntu-latest
+    Steps: 
+    	-Uses: actions/checkout@v1
+	-Uses: ./action-a
+	With:
+		MY_NAME: “Vasanthi Rajkumar”
 
 
